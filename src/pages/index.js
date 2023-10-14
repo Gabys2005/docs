@@ -16,6 +16,10 @@ const pages = [
 		name: "Televoting",
 		link: "televoting",
 	},
+	{
+		name: "Adorner",
+		link: "adorner",
+	},
 ];
 
 function HomepageHeader() {

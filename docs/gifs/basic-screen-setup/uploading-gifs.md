@@ -4,21 +4,35 @@ sidebar_position: 4
 
 # Adding GIFs
 
-So, Roblox doesn't accept GIFs, meaning that we need to convert them into **sprite sheets**. Sprite sheets are a collection of frames of the GIF put together into a grid.
+**Roblox doesn't accept GIFs**, meaning that you need to convert them into **sprite sheets**. Sprite sheets are a collection of frames (individual images) of the GIF put together into a grid.
 
-## Converting GIFs into sprite sheets
+:::caution
+Make sure your GIFs don't include anything that's against Roblox TOS, including links. Roblox WILL warn you for them.
+:::
 
-You can use a website like https://ezgif.com/gif-to-sprite to convert a GIF to a sprite sheet.
+## Converting a GIF into a sprite sheet
+
+:::note
+If you uploaded a specific GIF to Roblox before, you can skip this section. You don't need to upload the same image multiple times.
+:::
+
+Use the window below to convert your GIFs to sprite sheets (or do it in a new tab by clicking [here](https://gabys.xyz/gif_to_sprite/)). First, select your GIF file in the field. Then you'll need to wait a few seconds while your computer converts it for you. When it's done you'll see the result sprite sheet, as well as some **important** info. Keep that info for later.
 
 :::tip
-Try to keep the sprite sheet as square as possible for best quality. Avoid going over 100 frames in a single sprite sheet.
+Try keeping your GIFs under 100 frames (or less if they include text). Roblox will downscale the sprite sheet to 1024x1024 pixels, so a lot of quality will be lost.
 :::
+
+<iframe src="https://gabys.xyz/gif_to_sprite/" width="100%" height="500"></iframe>
+
+Press the `Download sprite sheet` button to save it. Go to https://create.roblox.com/dashboard/creations?activeTab=Decal and upload the image you downloaded.
 
 ## Editing the GIFs script
 
-After uploading the sprite sheet to Roblox like a normal image, open the `GIFs` script that's inside of the panel part.
+After uploading the sprite sheet to Roblox, open the `GIFs` script that's inside of the panel part (the same way you opened the `Settings` script).
 
-Each button on the panel is inside of the few lines of code between `{` and `}`. You need to copy the content from there to add more buttons. Here's what 1 button looks like:
+![](./img/open_gifs.png)
+
+This script is responsible for generating the buttons on the panel and connecting them to the right GIFs. Each button on the panel is inside of the few lines of code between `{` and `}`. To add more buttons / GIFs, you need to copy one of the examples I left. Here's what 1 button looks like:
 
 ```lua
 {
@@ -33,62 +47,36 @@ Each button on the panel is inside of the few lines of code between `{` and `}`.
 };
 ```
 
-Let's go through it line by line
-
-### Name
+If you used the page above to convert your GIF, then click on the `Roblox module` view and copy everything below it, it's button code prepared specifically for your GIF. Paste it into the script below one of the examples. It'll look something like this:
 
 ```lua
-Name = "Example",
+{
+    Name = "INSERT NAME OF BUTTON HERE",
+    ButtonColor = DefaultButtonColor,
+    Image = "INSERT IMAGE ID HERE AFTER UPLOADING",
+    FPS = 10,
+    FramesPerRow = 3,
+    Frames = 7
+};
 ```
 
-is the name that will be visible on the panel.
+Replace `INSERT NAME OF BUTTON HERE` with what you want to appear on the button. Make sure to keep the quotes (`""`), otherwise the script will break.
 
-### Button Color
+Go back to the website where you uploaded the image. Hover over the image you want to use and press the three dots that appear. Click `Copy Asset ID` and replace `INSERT IMAGE ID HERE AFTER UPLOADING` with what you just copied. Add `rbxassetid://` before the numbers, otherwise Roblox won't be able to find the image.
+
+![](./img/copy_id.png)
+
+In the end that bit of code should look something like this:
 
 ```lua
-ButtonColor = DefaultButtonColor,
+{
+    Name = "Set Fire",
+    ButtonColor = DefaultButtonColor,
+    Image = "rbxassetid://8672078232",
+    FPS = 24,
+    FramesPerRow = 5,
+    Frames = 36
+};
 ```
 
-is the color of the button on the panel, by default it's gray. If you want to change it, do it like so:
-
-```lua
-ButtonColor = Color3.fromRGB(R, G, B),
-```
-
-R, G and B should be numbers between 0 and 255
-
-### Image
-
-```lua
-Image = "rbxassetid://3528512681",
-```
-
-is the **image** ID of the sprite sheet.
-
-:::caution
-The **image** ID is not the same as the **link** ID. To get the image ID, go to https://create.roblox.com/dashboard/creations?activeTab=Image, click the 3 dots on the image you want to copy and click **`Copy Asset URI`**
-:::
-
-### FPS
-
-```lua
-FPS = 24,
-```
-
-is the amount of **frames per second**, which is basically the speed of your GIF. This can be at most 60.
-
-### Frames Per Row
-
-```lua
-FramesPerRow = 6,
-```
-
-is the amount of frames per individual row in your sprite sheet. You set that value on the GIF to sprite sheet website. By default it's 5.
-
-### Frames
-
-```lua
-Frames = 26,
-```
-
-is the **total** amount of frames in your GIF. The GIF to sprite sheet website tells you how many frames there are in your GIF after converting it.
+And that's everything that's required to insert the GIF into Roblox. I know it looks like a lot but after some practice you can insert new GIFs really quickly.

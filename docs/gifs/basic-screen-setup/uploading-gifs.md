@@ -62,7 +62,7 @@ If you used the page above to convert your GIF, then click on the `Roblox module
 
 Replace `INSERT NAME OF BUTTON HERE` with what you want to appear on the button. Make sure to keep the quotes (`""`), otherwise the script will break.
 
-Go back to the website where you uploaded the image. Hover over the image you want to use and press the three dots that appear. Click `Copy Asset ID` and replace `INSERT IMAGE ID HERE AFTER UPLOADING` with what you just copied. Add `rbxassetid://` before the numbers, otherwise Roblox won't be able to find the image.
+Go to https://create.roblox.com/dashboard/creations?activeTab=Image. Hover over the image you just uploaded and press the three dots that appear. Click `Copy Asset URI` and replace `INSERT IMAGE ID HERE AFTER UPLOADING` with what you just copied.
 
 ![](./img/copy_id.png)
 

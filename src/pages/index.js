@@ -20,6 +20,10 @@ const pages = [
 		name: "Adorner",
 		link: "adorner",
 	},
+	{
+		name: "Clothing Panel",
+		link: "clothing",
+	},
 ];
 
 function HomepageHeader() {

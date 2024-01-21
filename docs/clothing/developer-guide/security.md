@@ -2,6 +2,8 @@
 sidebar_position: 3
 ---
 
+import YoutubeVideo from "@site/src/components/YoutubeVideo"
+
 # Security settings
 
 There are 3 security settings that you can configure to prevent exploiters from abusing the panel: `MaxOutfitsPerUser`, `AllowedTeams`, `MaxDistanceFromPanel`. You can change them by opening the `Settings` script that's in the main `ClothingPanel` folder.
@@ -24,4 +26,4 @@ If this setting is empty (`{}`), then everyone will be allowed to use the panels
 
 This setting controls how far away a player can be from a panel when using it. For example, if this setting is set to `40`, then a player needs to be within a 40 stud radius of the panel to use it. This setting ensures that for example only people in the backstage can use it.
 
-<iframe src="https://www.youtube-nocookie.com/embed/WSZjemAQiPk?si=Q_8ESLbQxLoc_nr_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<YoutubeVideo id="WSZjemAQiPk" />

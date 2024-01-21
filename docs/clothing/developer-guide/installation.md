@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import YoutubeVideo from "@site/src/components/YoutubeVideo"
+
 # Installation
 
 ## Inserting the panel
@@ -12,7 +14,7 @@ To add the Clothing Panel to your game, first click the button below to get take
 
 When you're in Roblox Studio, open the Toolbox by pressing the `Toolbox` button on the top bar. Go to the `My Models` tab and search for `Clothing Panel`. Drag the model from the Toolbox to the game window and you're done!
 
-<iframe src="https://www.youtube-nocookie.com/embed/kAi45ZbtBmI?si=9BmgJO_x7GVmgjRf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<YoutubeVideo id="kAi45ZbtBmI" />
 
 ## Changing game settings
 
@@ -22,4 +24,4 @@ If you want to be able to browse the outfits in Studio, you'll need to enable `S
 It's not possible to create outfits in Studio. This is because text filtering is disabled in Studio.
 :::
 
-<iframe src="https://www.youtube-nocookie.com/embed/oSCrTCWd2fk?si=5vZ4pD9F0basoN9i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<YoutubeVideo id="oSCrTCWd2fk" />

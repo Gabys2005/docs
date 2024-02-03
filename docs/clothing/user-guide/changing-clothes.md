@@ -8,9 +8,13 @@ sidebar_position: 2
 
 To wear shirts, pants or accessories, press the `Add shirts, pants or accessories` button. In the popup, insert the ID of the item you want to wear and press `Submit`. Both classic and 3D clothing works.
 
+:::info
+When you equip a clothing item like a shirt or pants, including 3D clothing, the current one you wear will be replaced with the new one, **except for 3D pants** because most 3D shoes on the marketplace are technically pants, so to allow for both 3D shoes and 3D pants to be worn at the same time, there's no limit to how many 3D pants you can equip at once. **Remember that the order you equip 3D clothing in matters**.
+:::
+
 ## Faces
 
-Faces are changed the same way as above, but with the `Change face` button
+Faces are changed the same way as above, but with the `Change face` button.
 
 ## Animations
 

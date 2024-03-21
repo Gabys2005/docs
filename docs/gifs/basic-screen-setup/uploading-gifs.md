@@ -2,6 +2,8 @@
 sidebar_position: 4
 ---
 
+import YoutubeVideo from "@site/src/components/YoutubeVideo"
+
 # Adding GIFs
 
 **Roblox doesn't accept GIFs**, meaning that you need to convert them into **sprite sheets**. Sprite sheets are a collection of frames (individual images) of the GIF put together into a grid.
@@ -80,3 +82,9 @@ In the end that bit of code should look something like this:
 ```
 
 And that's everything that's required to insert the GIF into Roblox. I know it looks like a lot but after some practice you can insert new GIFs really quickly.
+
+## Video
+
+Here's a video showing everything that happened on this page:
+
+<YoutubeVideo id="3UKdgWxr2vE" />

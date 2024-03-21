@@ -2,6 +2,8 @@
 sidebar_position: 3
 ---
 
+import YoutubeVideo from "@site/src/components/YoutubeVideo"
+
 # Configuring the screens
 
 Now that everything we need is inserted into the game, let's set up the screens.
@@ -64,3 +66,9 @@ Screens = { workspace.Screen1.SurfaceGui, workspace.Screen2.Texture };
 ```
 
 If you want to add more screens just follow the pattern above.
+
+## Video
+
+Here's a video showing everything that happened on this page:
+
+<YoutubeVideo id="zVbPT52V-aI" />

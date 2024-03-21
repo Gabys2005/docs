@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import YoutubeVideo from "@site/src/components/YoutubeVideo"
+
 # Inserting the player and panel
 
 ## GIF Player
@@ -35,3 +37,9 @@ Press the button below to get taken to the Roblox Marketplace page for the GIF P
 <a href="https://create.roblox.com/marketplace/asset/7482597631" target="_blank" class="button button--primary">Roblox Marketplace</a>
 
 Insert it into your game using the Toolbox, same as above. Drag it wherever you want it to be.
+
+## Video
+
+Here's a video showing everything that happened on this page:
+
+<YoutubeVideo id="ZCAwYcrZcGU" />
